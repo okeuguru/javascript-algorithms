@@ -50,6 +50,7 @@ function validAnagram2(first, second) {
       lookup[letter] -= 1;
     }
   }
+  return `is Anagram: ${true}`;
 }
 
 validAnagram("cinema", "iceman");
