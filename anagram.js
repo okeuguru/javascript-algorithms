@@ -29,4 +29,29 @@ function validAnagram(str1, str2) {
   return true;
 }
 
-validAnagram("cinema", "icema");
+// This is a second method for solving this
+// using a frequency counter
+
+function validAnagram2(first, second) {
+  if (first.length !== second.length) {
+    return false;
+  }
+
+  const lookup = {};
+
+  for (let letter of first) {
+    lookup[letter] = ++lookup[letter] || 1;
+  }
+
+  for (let letter of second) {
+    if (!lookup[letter]) {
+      return false;
+    } else {
+      lookup[letter] -= 1;
+    }
+  }
+}
+
+validAnagram("cinema", "iceman");
+
+validAnagram2("cinema", "iceman");
