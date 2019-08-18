@@ -15,6 +15,7 @@ function countUniqueValues(sortedArray) {
     }
   }
   console.log(`There are ${i + 1} unique arrays`);
+  return i + 1;
 }
 
 countUniqueValues([1, 1, 1, 1, 1, 2]);
