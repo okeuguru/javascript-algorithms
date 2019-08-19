@@ -2,6 +2,8 @@
 // and counts the unique values in the array. There can be negative numbers in
 // the array but it will always be sorted
 
+// Multiple pointers pattern
+
 function countUniqueValues(sortedArray) {
   arrayLength = sortedArray.length;
   if (arrayLength === 0) return 0;
