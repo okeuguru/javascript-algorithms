@@ -2,6 +2,8 @@
 // of integers and a number called n. The function should calculate
 // the maximum sum of n consecutive elements in the array
 
+// sliding window
+
 function maxSubArraySum(arr, num) {
   if (arr.length < num) return null;
 
